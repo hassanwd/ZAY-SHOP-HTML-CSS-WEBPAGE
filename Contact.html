@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+              *{
+            margin: 0;
+            padding: 0;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        body{
+            overflow-x: hidden;
+        }
+
+        #main{
+            width: 100%;
+            height: 5vh;
+            background-color: #212934;
+        }
+        #main1{
+            width: 50%;
+            height: 5vh;
+            padding: 1px;
+            /* background-color: burlywood; */
+        }
+        #main1 p{
+            margin-left: 35%;
+            color: white;
+            cursor: pointer;
+            margin-top: -3vh;
+            font-weight: 5px;
+            font-size: 13px;
+        }
+        #main1 p span{
+            margin-left: -31%;
+        }
+        #main1 i{
+            font-size: 10px;
+            margin-top: 10px;
+            color: #cfd6e1;
+            margin-left: 32%;
+        }
+
+        #main2{
+            width: 10%;
+            height: 3vh;
+            cursor: pointer;
+            padding: 1px;
+            /* background-color: blueviolet ; */
+            margin-top: -5vh;
+            margin-left: 75%;
+        }
+        #main2 i{
+            margin-left: 10%;
+            font-size: 13px;
+            margin-top: 1vh;
+            color:#cfd6e1;
+        }
+        #navbar{
+            width: 100%;
+            height: 10vh;
+            padding: 1px;
+            box-shadow: 10px 0 15px 0 gray;
+            /* background-color: yellowgreen; */
+        }
+        #navbar1{
+            font-size: 40px;
+            margin-left: 17%;
+            width: 10vh;
+            margin-top: 3vh;
+            /* background-color: blue; */
+            /* font-weight: bold; */
+            color: #59ab6e;
+        }
+        #navbar3{
+            width: 20%;
+            height: 6vh;
+            /* background-color: red; */
+            margin-left: 75%;
+            margin-top: -6vh;
+        }
+        #navbar3 i{
+            margin-left: 2vh;
+            cursor: pointer;
+            margin-top: 2vh;
+        }
+        #circle{
+            width: 3vh;
+            padding: 1px;
+            margin-top: -4vh;
+            margin-left: 35%;
+            height: 3vh;
+            background-color: #e9eef5;
+            border-radius: 50%;
+        }
+        #circle1{
+            width: 6vh;
+            padding: 1px;
+            margin-top: -4vh;
+            margin-left: 16%;
+            height: 3vh;
+            background-color: #e9eef5;
+            border-radius: 25px;
+        }
+        #inline{
+            width:16% ;
+            height: 6vh;
+            /* background-color: coral; */
+        }
+        #inline1{
+            width:22% ;
+            height: 6vh;
+            /* background-color: pink; */
+            margin-left: 15%;
+            margin-top: -6vh;
+        }
+        #inline2{
+            width:35% ;
+            height: 6vh;
+            /* background-color: blue; */
+            margin-left: 33%;
+            margin-top: -6vh;
+        }
+        #circle div{
+            margin:2px 6px;
+        }
+        #circle1 div{
+            margin:2px 6px;
+        }
+        #navbar2{
+            width: 40%;
+            height: 4vh;
+            margin-left: 30%;
+            margin-top: -4vh;
+            padding: 1px;
+            /* background-color: red; */
+        }
+        #navbar2 ul{
+            list-style: none;
+        }
+        #navbar2 ul li{
+            margin-left: 15%;
+            display: inline;
+            margin-top: -2vh;
+        }
+        #navbar2 ul li a{
+            color: gray;
+            font-weight: lighter;
+            text-decoration: none;
+        }
+        #navbar2 ul li a:hover{
+            color: #59ab6e;
+        }
+        #contact{
+            width: 100%;
+            margin-top: 2vh;
+            height: 20vh;
+            padding: 1px;
+            background-color: #e9eef5;
+        }
+        #contact1{
+            font-size: 40px;
+            margin-left: 45%;
+            margin-top: 4vh;
+            color: rgb(66, 65, 65);
+            font-weight: lighter;
+
+        }
+        #contact2{
+            margin-left: 30%;
+            margin-top: 2vh;
+            color: rgb(95, 95, 95);
+        }
+        #image{
+            width: 100%;
+            height: 30vh;
+            background-color: pink;
+        }
+        #image1{
+            background-image: url(./images/2317.png);
+            background-size: cover;
+            width: 50%;
+            height: 30vh;
+            padding: 1px;
+            /* background-position-y: 10%; */
+        }
+        #marker{
+            background-image: url(./images/marker-icon.png);
+            background-size: cover;
+            width: 5vh;
+            height: 8vh;
+            margin-top: 7vh;
+            margin-left: 75%;
+        }
+        #image2{
+            background-image: url(./images/2317\ \(2\).png);
+            background-size: cover;
+            width: 50%;
+            height: 30vh;
+            padding: 1px;
+            margin-left: 50%;
+            margin-top: -30vh;
+            /* background-position-y: 10%; */
+        }
+        #talk{
+            width: 100%;
+            height: 70vh;
+            /* background-color: orange; */
+        }
+        #talk1{
+            width: 25%;
+            height: 4vh;
+            border: 1px solid rgb(224, 220, 220);
+            margin-left: 25%;
+            margin-top: 15vh;
+        }
+        #talk2{
+            width: 25%;
+            height: 4vh;
+            border: 1px solid rgb(224, 220, 220);
+        }
+        #talk3{
+            width: 50.5%;
+            height: 4vh;
+            border: 1px solid rgb(224, 220, 220);
+            margin-left: 25%;
+            margin-top: 5vh;
+        }
+        #talk4{
+            width: 50.7%;
+            border: 1px solid rgb(224, 220, 220);
+            height: 20vh;
+            margin-left: 25%;
+            margin-top: 5vh;
+        }
+        #btn1{
+            width: 8%;
+            height: 8vh;
+            /* background-color: pink; */
+            margin-left: 69.6%;
+        }
+        #btn{
+            width: 76%;
+            font-size: 18px;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            height: 5vh;
+            cursor: pointer;
+            margin-top:  1vh;
+            background-color: #59ab6e;
+        }
+        #end{
+            width: 100%;
+            padding: 1px;
+            height: 70vh;
+            /* margin-top: 50vh; */
+            background-color:#212934;
+        }
+        #end1{
+            width: 80%;
+            height: 38vh;
+            padding: 1px;
+            margin-top: 6vh;
+            margin-left: 30vh;
+            /* background-color: pink; */
+        }
+        #enda{
+            width: 30%;
+            height: 37vh;
+            padding: 1px;
+            }
+        #enda-1{
+            width: 30%;
+            height: 37vh;
+            padding: 1px;
+            margin-left: 32%;
+            margin-top: -37.2vh;
+            /* background-color: red; */
+        }
+        #enda-2{
+            width: 30%;
+            height: 37vh;
+            padding: 1px;
+            margin-top: -37.3vh;
+            margin-left: 64%;
+            /* background-color: red; */
+        }
+        #end2{
+            font-size: 30px;
+            font-weight: lighter;
+            color: #59ab6e;
+        }
+        #end3{
+            width: 100%;
+            height: 0.1px;
+            margin-top: 2vh;
+          background-color: rgb(161, 159, 159);
+        }
+        #enda i{
+            color: white;
+            display: block;
+            margin-top: 2vh;
+        }
+        #end4{
+            color: rgb(202, 202, 202);
+            margin-left: 3vh;
+            margin-top: -10.5vh;
+        }
+        #end5{
+            color: rgb(202, 202, 202);
+            margin-left: 3vh;
+            margin-top: 2vh;
+            cursor: pointer;
+        }
+        #end6{
+            color: rgb(202, 202, 202);
+            margin-left: 3vh;
+            margin-top: 1.5vh;
+            cursor: pointer;
+        }
+        #end7{
+            font-size: 30px;
+            font-weight: lighter;
+            color: white;
+        }
+        #enda-1 ul{
+            list-style: none;
+        }
+        #enda-1 ul li{
+            margin-top: 2vh;
+        }
+        #enda-1 ul li a{
+            text-decoration: none;
+            color: rgb(202, 202, 202);
+            font-weight: lighter;
+        }
+        #enda-1 ul li a:hover{
+            color: #59ab6e;
+        }
+        #enda-2 ul{
+            list-style: none;
+        }
+        #enda-2 ul li{
+            margin-top: 2vh;
+        }
+        #enda-2 ul li a{
+            text-decoration: none;
+            color: rgb(202, 202, 202);
+            font-weight: lighter;
+        }
+        #enda-2 ul li a:hover{
+            color: #59ab6e;
+        }
+        #last{
+            width: 75%;
+            margin-left: 15%;
+            height: 0.1px;
+            margin-top: 2vh;
+            background-color:rgb(202, 202, 202);
+        }
+        #lasta{
+            width: 20%;
+            margin-left: 10%;
+            height: 10vh;
+            /* background-color: pink; */
+        }
+        #last1{
+            width: 5vh;
+            height: 5vh;
+            background-color:transparent;
+            color: white;
+            padding: 1px;
+            margin-left: 25%;
+            margin-top: 3vh;
+            border: 1px solid white;
+            border-radius: 50%;
+        }
+        #last1 i{
+            margin: 1.5vh 1.5vh;
+        }
+        #last1:hover{
+            background-color: white;
+            color: black;
+            border: none;
+        }
+        #last2{
+            width: 5vh;
+            height: 5vh;
+            margin-top: -5.4vh;
+            margin-left: 44.5%;
+            background-color:transparent;
+            color: white;
+            padding: 1px;
+            border: 1px solid white;
+            border-radius: 50%;
+        }
+        #last2 i{
+            margin: 1.5vh 1.7vh;
+        }
+        #last2:hover{
+            background-color: white;
+            color: black;
+            border: none;
+        }
+        #last3{
+            width: 5vh;
+            height: 5vh;
+            margin-top: -5.5vh;
+            margin-left:64.5% ;
+            background-color:transparent;
+            color: white;
+            padding: 1px;
+            border: 1px solid white;
+            border-radius: 50%;
+        }
+        #last3 i{
+            margin: 1.5vh 1.4vh;
+        }
+        #last3:hover{
+            background-color: white;
+            color: black;
+            border: none;
+        }
+        #last4{
+            width: 5vh;
+            height: 5vh;
+            margin-top: -5.7vh;
+            margin-left: 84.5%;
+            background-color:transparent;
+            color: white;
+            padding: 1px;
+            border: 1px solid white;
+            border-radius: 50%;
+        }
+        #last4 i{
+            margin: 1.5vh 1.5vh;
+        }
+        #last4:hover{
+            background-color: white;
+            color: black;
+            border: none;
+        }
+        #mix{
+            width: 70%;
+            height: 5vh;
+            margin-top: -10vh;
+            margin-left: 65%;
+            /* background-color: pink; */
+        }
+        #mix button{
+            height: 5.5vh;
+            width: 10%;
+            border-radius: 5px;
+            background-color: #59ab6e;
+            color: white;
+            border: #59ab6e;
+        }
+        #mix input{
+            height: 5vh;
+            background-color: transparent;
+            color: white;
+            border: 1px solid rgb(207, 203, 203);
+            font-size: 15px;
+            margin-left: 1px;
+            width: 25%;
+        }
+        #final{
+            width: 100%;
+            height: 8vh;
+            margin-top:6vh;
+            padding: 1px;
+            background-color: #1d242d;
+        }
+        #final p{
+            margin-left: 15%;
+            margin-top: 2vh;
+            color: rgb(207, 203, 203);
+        }
+        #final span:hover{
+            color: #59ab6e;
+            cursor: pointer;
+        }
+       
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="main1">
+               <i class="fas fa-envelope"></i>
+               <p> info@company.com <span><i class="fas fa-phone"></span></i>   010-020-0340
+               </p>
+               
+           </div>
+           <div id="main2">
+            <i class="fab fa-twitter"></i>
+           <i class="fab fa-facebook-f"></i>
+           <i class="fab fa-youtube"></i>
+           <i class="fab fa-instagram"></i>
+           </div>
+           </div>
+   
+           <div id="navbar">
+               <div id="navbar1">Zay</div>
+               <div id="navbar2">
+                   <ul>
+                       <li><a href="./Home.html">Home</a></li>
+                       <li><a href="./About.html">About</a></li>
+                       <li><a href="./Shop.html">Shop</a></li>
+                       <li><a href="./Contact.html">Contact</a></li>
+                   </ul>
+                </div >
+                <div id="navbar3">
+                   <div id="inline">
+                       <i class="fas fa-search"></i> 
+                   </div>
+                    <div id="inline1">
+                       <i class="fas fa-cart-arrow-down"></i>
+                       <div id="circle">
+                           <div>7</div>
+                       </div>
+                    </div>     
+                <div id="inline2">
+                   <i class="fas fa-user"></i>
+                <div id="circle1">
+                   <div>+99</div>
+            </div>
+        </div>
+    </div>
+</div>
+             <div id="contact">
+                 <p id="contact1">Contact Us</p>
+                 <p id="contact2">Proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet.                </p>
+             </div>
+             <div id="image">
+             <div id="image1">
+                 <div id="marker"></div>
+             </div>    
+             <div id="image2"></div>
+             </div>   
+             <div id="talk">
+                 <input id="talk1" type="letters" placeholder="  Name">
+                 <input id="talk2" type="words" placeholder="  Email">
+                 <input id="talk3" type="letters" placeholder="  Subject">
+                 <textarea id="talk4" name="words" id="" cols="30" rows="10" placeholder="  Message"></textarea>
+                 <div id="btn1">
+                 <button id="btn">Let's talk</button> 
+                </div>
+                </div>
+                <div id="end">
+                    <div id="end1">
+                    <div id="enda">
+                        <h1 id="end2">Zay Shop</h1>
+                        <div id="end3"></div>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <i class="fas fa-phone"></span></i>
+                        <i class="fas fa-envelope"></i>
+                        
+                        <p id="end4"> 123 Consectetur at ligula 10660</p>
+                        <p id="end5"> 010-020-0340</p>
+                        <p id="end6"> info@company.com</p>
+                    
+                    </div>
+                    <div id="enda-1">
+                        <p id="end7">Products</p>
+                        <div id="end3"></div>
+                        <ul>
+                            <li><a href="">Luxury</a></li>
+                            <li><a href="">Sport Wear</a></li>
+                            <li><a href="">Men's Shoes</a></li>
+                            <li><a href="">Women's Shoes</a></li>
+                            <li><a href="">Popular Dress</a></li>
+                            <li><a href="">Gym Accessories</a></li>
+                            <li><a href="">Sport Shoes</a></li>
+                        </ul>
+                    </div>
+                    <div id="enda-2">
+                        <p id="end7">Further Info</p>
+                        <div id="end3"></div>
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">Shop Locations</a></li>
+                            <li><a href="">FAQs</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                    </div>
+                    </div>
+                    <div id="last"></div>
+                    <div id="lasta">
+                    <div id="last1">
+                    <i class="fab fa-twitter"></i>
+                    </div>
+                    <div id="last2">
+                    <i class="fab fa-facebook-f"></i>
+                    </div>
+                    <div id="last3">
+                    <i class="fab fa-youtube"></i>
+                    </div>
+                    <div id="last4">
+                    <i class="fab fa-instagram"></i>
+                    </div>
+                    </div>
+                    <div id="mix">
+                    <input type="words" placeholder="  Email Address">
+                    <button>Subscribe</button>
+                    
+                    </div>    
+                    <div id="final">
+                    <p>Copyright © 2021 Company Name | Designed by <span>TemplateMo</span> </p>
+                    </div>
+                    </div>
+                    
+       
+
+</body>
+</html>
